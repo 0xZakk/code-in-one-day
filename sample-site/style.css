@@ -28,6 +28,12 @@ section {
   padding: 4rem 0;
 }
 
+.wrapper {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 720px) {
   section {
     padding: 2rem;
@@ -47,13 +53,22 @@ section {
   height: 90vh;
   text-align: center;
   padding: 3rem;
-  background-image: url('./img//hero.png');
+  background-image: url('./img/hero.png');
   background-position: center center;
   background-size: cover;
 }
 
-nav {
-  display: none;
+.menu {
+  text-transform: uppercase;
+  color: inherit;
+  letter-spacing: 4px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 2rem;
 }
 
 nav ul {
@@ -62,7 +77,6 @@ nav ul {
 
 nav li {
   list-style-type: none;
-  display: inline-block;
   padding: 0.5rem 1rem;
 }
 
@@ -81,15 +95,47 @@ nav a:hover {
   color: #fff;
 }
 
-.wrapper {
-  width: 90%;
-  max-width: 1100px;
-  margin: 0 auto;
+@media screen and (max-width: 720px) {
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    transition: opacity 300ms ease;
+    background-color: white;
+    pointer-events: none;
+  }
+
+  nav.open {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  nav a {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
 }
 
 @media screen and (min-width: 720px) {
   nav {
     display: block;
+  }
+
+  nav li {
+    display: inline-block;
+  }
+
+  .menu,
+  .close {
+    display: none;
   }
 }
 
