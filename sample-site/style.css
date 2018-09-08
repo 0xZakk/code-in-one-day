@@ -1,0 +1,205 @@
+/*
+ * BASE STYLES
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #333;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+p {
+  line-height: 2;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+@media screen and (min-width: 720px) {
+  section {
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section {
+    padding: 4rem;
+  }
+}
+
+/*
+ * Hero
+ */
+.hero {
+  height: 90vh;
+  text-align: center;
+  padding: 3rem;
+  background-image: url('./img//hero.png');
+  background-position: center center;
+  background-size: cover;
+}
+
+nav {
+  display: none;
+}
+
+nav ul {
+  padding-left: 0;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+
+nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-family: 'Oswald', sans-serif;
+  color: #333;
+  padding: 0.5rem 1.5rem;
+  transition: all 300ms ease;
+}
+
+nav a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 720px) {
+  nav {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  nav li {
+    padding: 1rem 2rem;
+  }
+}
+
+/*
+ * Intro
+ */
+.intro {
+  text-align: center;
+}
+
+.image-row {
+  margin-top: 3rem;
+}
+
+.image {
+  display: inline-block;
+  padding-top: 100%;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+}
+
+.image-1 {
+  background-image: url('./img/11th-and-F.jpg');
+}
+
+.image-2 {
+  background-image: url('./img/capitol-statue.jpg');
+}
+
+.image-3 {
+  background-image: url('./img/metro-escalator.jpg');
+}
+
+@media screen and (min-width: 720px) {
+
+  .image {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .image {
+    padding-top: 35%;
+  }
+}
+
+/*
+ * About
+ */
+
+.about {
+  background-color: #D2DBE0;
+  text-align: center;
+}
+
+.about h4 {
+  margin-bottom: 2.5rem;
+}
+
+.about p {
+  text-align: left;
+}
+
+/*
+ * Call to Action
+ */
+.call-to-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+  background-position: center center;
+  background-size: cover;
+  background-image: url('./img/jefferson.png');
+}
+
+.button {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: 'Oswald', sans-serif;
+  color: inherit;
+  border: 2px solid #333;
+  padding: 0.6rem 2.5rem;
+  transition: all 300ms ease;
+}
+
+.button:hover {
+  background-color: #333;
+  color: #fff
+}
+
+/*
+ * Footer
+ */
+footer {
+  background-color: #D2DBE0;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+footer h4 {
+  margin: 0;
+  line-height: 1;
+}
